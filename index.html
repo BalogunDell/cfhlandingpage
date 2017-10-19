@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cards For Humanity</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Aladin|Baumans|Philosopher" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Cards for Humanity</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav-item-cfh active">
+              <a class="nav-link" href="#">Home
+              </a>
+            </li>
+            <li class="nav-item nav-item-cfh active">
+              <a class="nav-link" href="#">How To Play
+              </a>
+            </li>
+            <li class="nav-item nav-item-cfh active">
+              <a class="nav-link" href="#">Charity
+              </a>
+            </li>
+            <li class="nav-item active">
+              <button class="btn btn-responsive btn-small btn-tweet"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-responsive btn-small btn-cfh">Leave Game</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row game-header">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3">
+                <div class="counter">
+                  <p>0</p>
+                </div>
+            </div>
+            <div class="col-md-6 question">
+              <div class="row">
+                <div class="col-md-12 centralized">
+                  <h1>Finding Players</h1>
+                </div>
+              </div>
+              <div class="row spaced-md">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-4">
+                    <div class="btn btn-responsive btn-cfh btn-cfh-black btn-block">start game</div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="btn btn-cfh btn-cfh-wine btn-block">invite other players</div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+                <div class="counter">
+                  <p>1/12</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="row instructions">
+            <div class="col-md-12">
+              <h1 class="centralized">How to Play</h1>
+            </div>
+            <div class="col-md-12">
+              <ul>
+                <li><p>Each player begins with, and will always have, 10 white answer cards.</p></li>
+                <li><p>For each round, one player is randomly chosen as the Card Czar.</p></li>
+                <li><p>Everyone else answers the black question card by clicking on the answer card they want to use.</p></li>
+                <li><p>The Card Czar then picks a favorite answer, and whoever played that answer wins the round.</p></li>
+                <li><p>Want to adorn your avatar with a glorious crown? Donate to charity after the game!</p></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row typed">
+            <div class="col-md-9" id="typed-strings">
+                <p > Save a child today! Do not forget to make a contribution today!</p>
+                <p></p>
+            </div>
+            <span id="typed"></span>
+            <div class="col-md-3">
+                <button class="btn btn-responsive btn-cfh btn-block btn-cfh-wine pull-right"> Donate </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-2">
+          
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      var typed = new Typed('.element', {
+        stringsElement: '#typed-strings'
+      });
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

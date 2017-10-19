@@ -92,13 +92,14 @@ body {
 
 .question, .counter {
 	min-height: 150px;
-	border-radius: 14px 0px;
+	border-radius: 0px;
 }
 
 .instructions{
 	background-color: #fff;
 	margin-top: 4%;
 	padding: 15px;
+	border-radius: 0px 0px 30px 30px;
 }
 
 .typed{
@@ -166,5 +167,13 @@ body {
 	width: 60%;
 	height: 60%;
 	z-index: 9999;
-	background: url('../img/loader-32x/loader2.gif') center no-repeat #fff;
+	background: url('../img/loader-32x/loader5.gif') center no-repeat #fff;
+}
+
+.gamer{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.unpadded {
+	padding: 0px;
 }

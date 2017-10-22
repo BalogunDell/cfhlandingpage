@@ -1,7 +1,10 @@
 .navbar {
-	background-color: rgba(144, 19, 19, 0.99) !important;
+	background-color:#0d9c58 !important;
 	padding: 0px;
-	color: #fff !important;
+}
+
+.bg-dark {
+	background-color:#0d9c58 !important;
 }
 
 .navbar-brand {
@@ -11,9 +14,16 @@
 
 body {
 	font-family:'Philosopher', 'Roboto', 'Ubuntu Mono', sans-serif;
-	background: url('../img/background.jpeg') ;
+	/* cbackground: url('../img/background.jpeg') ; */
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.navbar-nav li {
+	color: red !important
+}
+.navbar-dark {
+	color: #F8F8F8;
 }
 
 .nav-item {
@@ -21,7 +31,8 @@ body {
 }
 
 .nav-item-cfh {
-    height: 66px;
+	height: 66px;
+	color: #0d9c58 !important;
 }
 
 .nav-item-cfh:hover{
@@ -30,6 +41,7 @@ body {
 
 .navbar-nav ul li {
 	height: 100%;
+	color: #0d9c58;
 }
 
 .btn-tweet {
@@ -41,6 +53,10 @@ body {
 .btn-cfh{
     background-color: #000;
     color: #fff;
+}
+
+.cfh-green{
+	color: #0d9c58 !important;
 }
 
 .btn-cfh-black {

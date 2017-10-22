@@ -10,6 +10,11 @@
 
     <title>Cards For Humanity</title>
 
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,37 +23,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Aladin|Baumans|Philosopher" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <style>
-      body {
-        padding-top: 54px;
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>    
+    <script src="assets/js/popper.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+  </head>
+
+  <style>
+    body {
+        padding-top: 50%;
       }
       @media (min-width: 992px) {
         body {
           padding-top: 56px;
         }
       }
-
-    </style>
-
-    <script>
-      // $(window).load(function() {
-      //   // Animate loader off screen
-      //   $(".se-pre-con").fadeOut("slow");
-      // });
-    </script>
-
-  </head>
-
+  </style>
   <body>
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cards for Humanity</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">logo here</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,109 +64,244 @@
               </a>
             </li>
             <li class="nav-item nav-item-cfh active">
-              <a class="nav-link" href="#">How To Play
+              <a class="nav-link" href="#">How to play
               </a>
             </li>
             <li class="nav-item nav-item-cfh active">
               <a class="nav-link" href="#">Charity
               </a>
             </li>
-            <li class="nav-item active">
-              <button class="btn btn-responsive btn-small btn-tweet"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</button>
-            </li>
-            <li class="nav-item">
-              <button class="btn btn-responsive btn-small btn-cfh">Leave Game</button>
-            </li>
+
+            <li class="nav-item nav-item-cfh active">
+                <a class="nav-link" href="#">About us
+                </a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Page Content -->
-    <div class="container-fluid">
-      <div class="row game-header">
-        <div class="col-md-1"></div>
-        <div class="col-md-8">
-          
-          <div class="row gamer">
-              <div class="col-md-3 unpadded">
-                  <div class="counter animated bounce">
-                    <p>0</p>
-                    <h6>seconds remaining</h6>
-                  </div>
+    <div class="container-fluid cfhBg">
+      <div class="container">
+        <div class="row">
+          <!-- Site description and title -->
+          <div class="col-sm-12 col-md-6 col-lg-6">
+              <!-- Cards for humanity title -->
+              <div class="row title">
+                <h1 class="cfh-green">Cards for Humanity</h1>
               </div>
-              <div class="col-md-6 question animated zoomInUp">
-                <div class="row">
-                  <div class="col-md-1"></div>
-                  <div class="col-md-2">
-                    <div class="load-con">
+
+              <!-- Other descriptions and buttons -->
+                  <p>Cards for Humanity is a fast-paced online version of the popular card game, 
+                    Cards Against Humanity, that gives you the opportunity to donate to children in need - 
+                    all while remaining as despicable and awkward as you naturally are.
+                  </p>
+                  <p id="warning">
+                    <span>Warning!</span><br/>
+                    <i class="fa fa-quote-left"></i>
+                    This game contains offensive, profane, explicit content created by Cards Against Humanity and provided here, 
+                    uncensored and complete, in digital form. Human Resources made us say that.
+                    <i class="fa fa-quote-right"></i>
+                  </p>
+
+                  <button class="btn btn-success">Signup</button>
+                  <button class="btn btn-danger">Play as a guest</button>
+          </div>
+            
+            <!-- Cards -->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+
+              <!-- Carousel here -->
+              <div id="CHFcarousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#CHFcarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#CHFcarousel" data-slide-to="1"></li>
+                    <li data-target="#CHFcarousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img class="d-block img-fluid" src="./assets/img/newCards.png" alt="First slide" id="slide1">
                     </div>
-                  </div>
-                  <div class="col-md-8">
-                      <h2>Finding Players</h2>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="./assets/img/card1.png" alt="Second slide" id="slide2">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="./assets/img/card7.png" alt="Third slide" id="slide3">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="./assets/img/card6.png" alt="fourth slide" id="slide3">
+                      </div>
                   </div>
                 </div>
-                <div class="row spaced-lg">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-4">
-                      <div class="btn btn-responsive btn-cfh btn-cfh-black btn-block">start game</div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="btn btn-cfh btn-cfh-wine btn-block">invite other players</div>
-                    </div>
-                </div>
-              </div>
-              <div class="col-md-3 unpadded">
-                  <div class="counter animated bounce">
-                    <p>1/12</p>
-                    <h6>players</h6>
-                  </div>
-              </div>
+              <!-- Carousel ends here -->
+            </div>
+          </div> 
+        </div>
+      </div> 
+    </div>
+
+    <!-- Section 2 how to play the game -->
+    <div class="container-fluid section2">
+      <div class="container">
+        <div class="row">
+          <h1 class="col align-self-center">HOW TO PLAY</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-lg-3 how-to-container">
+              <p class="how-to active">Each player begins with, and will always have, 10 white answer cards.</p>
+              <h6 class="numbering">1</h6>
           </div>
 
-          <div class="row instructions">
-            <div class="col-md-12">
-              <h1 class="centralized">How to Play</h1>
-            </div>
-            <div class="col-md-12">
-              <ul>
-                <li><p>Each player begins with, and will always have, 10 white answer cards.</p></li>
-                <li><p>For each round, one player is randomly chosen as the Card Czar.</p></li>
-                <li><p>Everyone else answers the black question card by clicking on the answer card they want to use.</p></li>
-                <li><p>The Card Czar then picks a favorite answer, and whoever played that answer wins the round.</p></li>
-                <li><p>Want to adorn your avatar with a glorious crown? Donate to charity after the game!</p></li>
-              </ul>
-            </div>
+          <div class="col-md-3 col-lg-3 how-to-container">
+              <p class="how-to">For each round, one player is randomly chosen as the Card Czar.</p>
+              <h6 class="numbering">2</h6>
           </div>
 
-          <div class="row typed">
-            <div class="col-md-9" id="typed-strings">
-                <p > Save a child today! Do not forget to make a contribution today!</p>
-                <p></p>
-            </div>
-            <span id="typed"></span>
-            <div class="col-md-3">
-                <button class="btn btn-responsive btn-cfh btn-block btn-cfh-wine pull-right"> Donate </button>
-            </div>
+          <div class="col-md-3 col-lg-3 how-to-container">
+              <p class="how-to">Everyone else answers the black question card by clicking on the answer card they want to use.</p>
+              <h6 class="numbering">3</h6>
+          </div>
+
+          <div class="col-md-3 col-lg-3 how-to-container">
+              <p class="how-to">The Card Czar then picks a favorite answer, and whoever played that answer wins the round.</p>
+              <h6 class="numbering">4</h6>
           </div>
 
         </div>
-        <div class="col-md-2">
-          
+      </div>
+    </div> 
+
+
+    <!-- Section 3 Donate and  -->
+    <div class="container-fluid section3">
+        <div class="container">
+          <div class="row justify-content-center align-self-center">
+            <h1 align="align-self-center"><b>CHARITY</b></h1>
+          </div>
+        </div>
+
+        <div class="container content">
+          <div class="row justify-content-center align-self-center">
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                  <a href="http://www.crowdrise.com/cfhio/fundraiser/cards4humanity" id="crowdriseStaticLink-fundraiser-121142" title="Fundraising Websites on Crowdrise">Fundraising Websites - Crowdrise</a>
+                  <script type="text/javascript" src="https://www.crowdrise.com/widgets/donate/fundraiser/121142/?callback=userDonationCb"></script>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                  <div class="row">
+                      <i class="fa fa-quote-left"></i>
+                        <h4>If you don't give back, no one will like you™
+                      <i class="fa fa-quote-right"></i> -
+                      <a href="http://www.crowdrise.com/cfhio/fundraiser/cards4humanity">crowdrise.com</a>
+                    </h4>
+                  </div>
+
+                  <div class="donation-description">
+                      <p>
+                          We're quite sure you feel the same way, so we've integrated donation widgets (via crowdrise.com), 
+                          along with some not-so-subtle reminders throughout the game to give you the opportunity to donate. 
+                          If you're signed in when you donate, we'll even upgrade your account and place a crown on your avatar's head 
+                          (to remind other players how much better you are than them).
+                      </p>
+
+                      <p>All donations go to the Make-a-Wish Foundation and benefit children in need.</p>
+                  </div>
+
+                  <div class="makeWish">
+                      <a href="http://www.wish.org"><img src="./assets/img/make-a-wish-logo-white-large.png" id="wish"/></a>                      
+                  </div>
+                  
+              </div>
+          </div>
         </div>
       </div>
 
-    </div>
 
+      <!-- The team -->
+      <div class="container-fluid section4">
+        <div class="container">
+          <div class="row justify-content-center align-self-center">
+            <h1 class="align-self-center">THE TEAM</h1>
+          </div>
+
+          <div class="row justify-content-center align-self-center">
+              <p class="align-self-center">Cards for Humanity was created with love and tenderness these amazing team</p>
+            </div>
+          
+          <div class="row justify-content-center align-self-center">
+             <div class="col-sm-12 col-md-12 col-lg-3">
+              <div class="teamMembersContainer">
+                <div class="teamMembers">
+                  <img src="./assets/img/image1.png" class="img-fluid align-self-center" alt="">
+                   <div class="details">
+                    <h4><a href="https://github.com/silversteez" target="_blank">Matt Silverstein</a></h4>
+                  </div>
+                </div>
+              </div>
+             </div>
+
+             <div class="col-sm-12 col-md-12 col-lg-3 align-self-center">
+                <div class="teamMembersContainer">
+                    <div class="teamMembers">
+                      <img src="./assets/img/image2.png" class="img-fluid" alt="">
+                      <div class="details">
+                        <h4><a href ="https://github.com/mrngoitall" target="_blank">William Ngo</a></h4>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-3 align-self-center">
+                <div class="teamMembersContainer">
+                    <div class="teamMembers">
+                      <img src="./assets/img/image3.png" class="img-fluid" alt="">
+                      <div class="details">
+                        <h4><a href="https://github.com/tylermcginnis" target="_blank">Tyler McGinnis</a></h4>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-3 align-self-center">
+                <div class="teamMembersContainer">
+                    <div class="teamMembers">
+                      <img src="./assets/img/image4.png" class="img-fluid" alt="">
+                      <div class="details">
+                        <h4><a href="https://github.com/davegonzalez" target="_blank">David Gonzalez</a></h4>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid section5">
+        <div class="container">
+           <div class="row">
+             <div class="col-sm-12 col-md-12 col-lg-11">
+                Legal stuff: This game is based on the <a href="http://cardsagainsthumanity.com/">>Cards Against Humanity</a> card game, which is CC licensed (BY-NC-SA). 
+                Cards for Humanity is not affiliated with Cards Against Humanity. In complying with the Creative Commons 
+                license of the Cards Against Humanity card game, 
+                all proceeds from donations go directly to charity, as managed by <a href="crowdrise">crowdrise.</a>
+             </div>
+
+             <div class="col-sm-12 col-md-12 col-lg-1">
+                <img src="./assets/img/github.png" alt="">
+                <span class="align-self-center">Privacy Policy</span>
+             </div>
+           </div>
+        </div>
+      </div>
     
-    <!-- Bootstrap core JavaScript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>    
-
+<div class="socials">
+  <p>socials
+      
+  </p>
+   
+</div>
   </body>
-
 </html>

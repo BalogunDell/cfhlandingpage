@@ -1,19 +1,20 @@
 .navbar {
-	background-color:#0d9c58 !important;
+	background-color: transparent !important;
 	padding: 0px;
+	transition: background-color 1s;
 }
 
 .bg-dark {
-	background-color:#0d9c58 !important;
+	background-color:#024d28 !important;
 }
 
 .navbar-brand {
-	font-family: 'Aladin', cursive !important;
-	font-size: 24px;
+	font-family: 'Berkshire Swash', cursive !important;
+	font-size: 40px;
 }
 
 body {
-	font-family:'Philosopher', 'Roboto', 'Ubuntu Mono', sans-serif;
+	font-family: 'Philosopher', 'Roboto', 'Ubuntu Mono', sans-serif;
 	/* cbackground: url('../img/background.jpeg') ; */
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -28,6 +29,18 @@ body {
 
 .nav-item {
 	padding: 13px 10px;
+}
+
+a.nav-link {
+	background-color: transparent !important;
+	width: 100px;
+	text-align: center;
+	font-size: 17px;
+}
+
+.nav-link:hover {
+	background-color:#024d28 !important;
+	border-radius: 10px;
 }
 
 .nav-item-cfh {
@@ -192,4 +205,8 @@ body {
 }
 .unpadded {
 	padding: 0px;
+}
+
+.button-row{
+	margin-top: 7% !important;
 }

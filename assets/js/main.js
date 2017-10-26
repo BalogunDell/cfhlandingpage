@@ -1,12 +1,14 @@
 $(document).ready(function(){
-    // Initialize AOS Library
+    //  Initialize AOS
     AOS.init();
 
-    // Initialize and call bootstrap carousel
-    $('#CHFcarousel').carousel({
-        interval: 1000
+    $(window).bind('scroll', function(){
+        var scrollAmount = $(window).scrollTop()
+        if(scrollAmount > 50) {
+            $('.navbar').addClass('navbar-scroll');
+        } else {
+            $('.navbar').removeClass('navbar-scroll');
+        }
     });
-
-    $(window).scrollTop()
     
 });

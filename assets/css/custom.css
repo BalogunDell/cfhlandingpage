@@ -15,10 +15,14 @@
 }
 
 body {
-	font-family: 'Philosopher', 'Roboto', 'Ubuntu Mono', sans-serif;
+	font-family: 'Comfortaa', 'Roboto', 'Ubuntu Mono', sans-serif;
 	/* cbackground: url('../img/background.jpeg') ; */
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.header-message h1{
+	font-family: 'Comfortaa', 'Berkshire Swash', cursive !important;
 }
 
 .navbar-nav li {

@@ -2,6 +2,7 @@ $(document).ready(function(){
     //  Initialize AOS
     AOS.init();
 
+
     $(window).bind('scroll', function(){
         var scrollAmount = $(window).scrollTop()
         if(scrollAmount > 50) {

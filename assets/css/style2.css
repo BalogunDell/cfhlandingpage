@@ -36,7 +36,7 @@ body, html {
     margin-top: 250px;
     color: #43bf06;
     font-size: 60px;
-    font-family: 'Berkshire Swash', cursive !important;
+    font-family: 'Righteous', cursive !important;
 }
 
 @media (max-width:400px) {
@@ -89,27 +89,20 @@ body, html {
 
 .content .buttons .signup {
     line-height: 50px;
-    min-width: 160px;
+    min-width: 180px;
     text-align: center;
     background: #43bf06;
     margin-right: 30px;
     color: white;
     border-radius: 10px;
-    padding: 5px 30px;
     font-size: 16px;
     text-transform: uppercase;
     transition: color 1.0s, background-color 1.0s;
 }
 
 .content .buttons .signup:hover {
-    line-height: 50px;
-    min-width: 160px;
-    text-align: center;
     background: white;
-    margin-right: 30px;
     color: #43bf06;
-    border-radius: 20px;
-    padding: 5px 30px;
 }
 
 .content .buttons .guest {
@@ -119,34 +112,30 @@ body, html {
     background: white;
     margin-right: 30px;
     color: #43bf06;
-    border-radius: 20px;
+    border-radius: 10px;
     border-color: transparent;
-    padding: 5px 30px;
     font-size: 17px;
     text-transform: uppercase;
     
 }
 
 .content .buttons .guest:hover {
-    line-height: 50px;
-    min-width: 160px;
     text-align: center;
     background: #43bf06;
-    margin-right: 30px;
     color: white;
-    border-radius: 20px;
-    padding: 5px 30px;
     transition: color 1.0s, background-color 1.0s;
 }
 
 
 .second-section {
     height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;    
 }
 
 .second-section .title-question {
     margin:  auto;
-    margin-top: 90px;
+    margin-top: 80px;
     color: #43bf06;
     font-weight: bold;
     line-height: 0.001em;
@@ -155,14 +144,16 @@ body, html {
 
 .second-section .title-question h1{
     text-align: center;
+    font-family: 'Righteous';
 }
 
 .second-section .description {
-    margin-top: 40px;
+    margin-top: 20px;
     height: auto;
     text-align: center;
     font-size: 25px;   
     padding-bottom: 50px;
+    font-family: 'Hammersmith+One';
 }
 
 .third-section {
@@ -180,6 +171,7 @@ body, html {
 .third-section .how-to-play-title h1 {
     text-align: center;
     color: white;
+    font-family: 'Righteous';
 }
 
 .third-section img {
@@ -200,19 +192,20 @@ body, html {
 .fourth-section {
     background-color: white;
     min-height: 100%;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .fourth-section h1{
    text-align: center;
    color: #43bf06;
-   font-weight: bold;
+   font-family: 'Righteous';
 }
 
 .fourth-section h2 {
     font-size: 20px;
     text-align: center;
     margin-top: 30px;
+    font-family: 'Hammersmith+One';
 }
 
 .fourth-section h2 i{
@@ -224,6 +217,10 @@ body, html {
     margin-top: 50px;
 }
 
+.fourth-section .fourth-section-content p {
+  font-family: 'Hammersmith+One';
+  font-size: 20px;
+}
 .fourth-section .fourth-section-content img {
     max-width: 200px;
 }
@@ -235,15 +232,36 @@ body, html {
     padding-top: 30px;
 }
 
-.fourth-section .fourth-section-content iframe {
-  max-width: 560px;
-  max-height: auto;
-  width: 560px;
-  height: auto;
+.fourth-section .fourth-section-content .iframe {
+  max-height: 520px;
+  max-width: 300px;
 }
 
-/* .footer-section {
-  background-color: #43bf06;
-  height: 100px;
-  width: 100%;
-} */
+.footer-section {
+  background-color:black;
+  position: relative;
+}
+
+.footer-section p {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Hammersmith+One';
+}
+
+.footer-section p a {
+  color: #43bf06;
+  font-family: 'Hammersmith+One';
+}
+
+.footer-section .github{
+  float: left;
+  margin-top: 50px;
+} 
+
+@media (max-width: 400px) {
+  .footer-section .github{
+    margin-top: 0px;
+    float: left;
+  } 
+}

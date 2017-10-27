@@ -11,7 +11,12 @@
 
 .navbar-brand {
 	font-family: 'Berkshire Swash', cursive !important;
-	font-size: 40px;
+	font-size: 30px;
+}
+
+.navbar-brand img{
+	max-height: 70px;
+
 }
 
 body {
@@ -96,9 +101,6 @@ a.nav-link {
 	text-transform: capitalize;
 }
 
-.btn-cfh-blue {
-}
-
 .spaced-sm{
 	margin-top: 3%;
 }
@@ -143,9 +145,6 @@ a.nav-link {
 	color: #fff;
 }
 
-.typed p {
-
-}
 
 .instructions ul{
 	list-style-type: katakana;
@@ -170,19 +169,10 @@ a.nav-link {
 	padding: 30px;
 	background-color: #fff;
 }
-.question h1{
-
-}
-
-.question p {
-
-}
 
 .players-count{
 	font-size: 36px;
 }
-
-
 
 
 .no-js #loader { display: none;  }

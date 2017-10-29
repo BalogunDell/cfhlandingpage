@@ -255,13 +255,20 @@ body, html {
 }
 
 .footer-section .github{
-  float: left;
-  margin-top: 50px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
+ align-items: center;
 } 
 
+.footer-section .github .twitter-follow-button .btn{
+    height: 50px;
+}
 @media (max-width: 400px) {
   .footer-section .github{
     margin-top: 0px;
     float: left;
   } 
 }
+

@@ -3,10 +3,11 @@
 	padding: 0px;
 	height: 50px;
 	transition: background-color 0.5s, height 0.5s;
+	padding-top: 20px;
 }
 
 .bg-dark {
-	background-color:#024d28 !important;
+	background-color:#0d9c58 !important;
 }
 
 .navbar-brand {
@@ -15,7 +16,7 @@
 }
 
 .navbar-brand img{
-	max-height: 70px;
+	max-height: 90px;
 
 }
 

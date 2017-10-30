@@ -5,17 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="./assets/dist/emojionearea.css">
   <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/dist/emojionearea.js"></script>
+  
 </head>
 <body>
 
 <form action="#">
-  <textarea name="test" id="test" cols="30" rows="10" placeholder="type here">
-
+  <textarea name="test" id="test" placeholder="type here">
+    knfadsfadifnadif
 
   </textarea>
   <input type="submit" value="submit">
 </form>
   
+<script>
+  $(document).ready(function() {
+    $("#test").emojioneArea({
+      pickerPosition: "bottom",
+      tonesStyle: "bullet"
+    });
+  });
+</script>
 </body>
 </html>

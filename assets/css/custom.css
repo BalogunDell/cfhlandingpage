@@ -20,6 +20,9 @@
 
 }
 
+.img-responsive {
+	margin:auto;
+}
 body {
 	font-family: 'Comfortaa', 'Roboto', 'Ubuntu Mono', sans-serif;
 	/* cbackground: url('../img/background.jpeg') ; */

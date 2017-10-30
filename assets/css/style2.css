@@ -160,10 +160,15 @@ body, html {
     height: auto;
     background-color: black;
     padding-top: 60px;
-    padding-bottom: 60px; 
- 
+    padding-bottom: 80px;
 }
 
+.third-section .howto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .third-section .how-to-play-title {
     margin: auto;
 }
@@ -172,20 +177,14 @@ body, html {
     text-align: center;
     color: white;
     font-family: 'Righteous';
+    padding-bottom: 20px;
 }
 
 .third-section img {
     margin-top: 20px;
     max-height: 324px;
     max-width: 251px;
-
-}
-
-.third-section img:hover {
-    margin-top: 20px;
-    height: 324px;
-    width: 251px;
-    left: 50%;
+    margin: auto;
 }
 
 
@@ -226,15 +225,30 @@ body, html {
 }
 
 .fourth-section .fourth-section-content .makeAWish, 
-.fourth-section .fourth-section-content .video {
+.fourth-section .fourth-section-content .donate {
     margin: auto;
     padding-bottom: 30px;
     padding-top: 30px;
 }
 
-.fourth-section .fourth-section-content .iframe {
-  max-height: 520px;
-  max-width: 300px;
+.fourth-section .fourth-section-content .donate {
+    color: #ffffff;
+    font-weight: bold;
+    border-top: 1px solid #fedaac;
+    display: block;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: rgba(249,147,49, 1);
+    transition: background 1s;
+    margin-top: 20px;
+
+}
+
+.fourth-section .fourth-section-content .donate .btn:hover {
+    background: rgb(245, 152, 66);
 }
 
 .footer-section {

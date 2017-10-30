@@ -10,158 +10,228 @@
 
     <title>Cards For Humanity</title>
 
+    <!-- Custom styles for this template -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Aladin|Baumans|Philosopher" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Comfortaa|Righteous|Hammersmith+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Convergence" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
+    <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="game.css">
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>    
+    <script src="assets/js/popper.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="./assets/js/smooth-scroll.min.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+      
+        var ChroMo = '(Chrome)/(\d+)\.(\d+)\.(\d+)\.(\d+) Mobile';
+      
+        if (/Android|webOS|CriOs|ChroMo|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false && location.href !== "http://localhost:3000/#!/app") {
+          $('body').append('<a href="http://hackreactor.com"><img style="z-index: 10000; position: absolute; top: 0; right: 0; width: 125px; height: 125px; border: 0;" src="https://i.imgur.com/x86kKmF.png" alt="Built at Hack Reactor"></a>');
         }
-      }
+      
+        //Twitter buttons
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+      
+        });
+      </script>
 
-    </style>
-
-    <script>
-      // $(window).load(function() {
-      //   // Animate loader off screen
-      //   $(".se-pre-con").fadeOut("slow");
-      // });
-    </script>
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cards for Humanity</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-scroll">
+      <div class="container">
+        <h4>Cards For Humanity</h4>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item nav-item-cfh active">
-              <a class="nav-link" href="#">Home
+            <li class="nav-item">
+              <a class="nav-link abandon" href="#">Abandon Game
               </a>
-            </li>
-            <li class="nav-item nav-item-cfh active">
-              <a class="nav-link" href="#">How To Play
-              </a>
-            </li>
-            <li class="nav-item nav-item-cfh active">
-              <a class="nav-link" href="#">Charity
-              </a>
-            </li>
-            <li class="nav-item active">
-              <button class="btn btn-responsive btn-small btn-tweet"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</button>
             </li>
             <li class="nav-item">
-              <button class="btn btn-responsive btn-small btn-cfh">Leave Game</button>
+              <a class="nav-link twitter" href="#about">Tweet
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- Page Content -->
-    <div class="container-fluid">
-      <div class="row game-header">
-        <div class="col-md-1"></div>
-        <div class="col-md-8">
-          
-          <div class="row gamer">
-              <div class="col-md-3 unpadded">
-                  <div class="counter animated bounce">
-                    <p>0</p>
-                    <h6>seconds remaining</h6>
-                  </div>
-              </div>
-              <div class="col-md-6 question animated zoomInUp">
+   <div class="container-fluid game-ui">
+    <div class="container">
+        <div class="row game-console">
+          <div class="col-md-3 avatar-row">
+            <div class="row bottom-spaced-md">
+            <div class="col-md-12">
+              <div class="player-card">
                 <div class="row">
-                  <div class="col-md-1"></div>
-                  <div class="col-md-2">
-                    <div class="load-con">
+                    <div class="col-md-3">
+                      <img src="assets/img/chosen/F01.png" width="50px" height="50px" alt="avatar">
                     </div>
-                  </div>
-                  <div class="col-md-8">
-                      <h2>Finding Players</h2>
-                  </div>
-                </div>
-                <div class="row spaced-lg">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-4">
-                      <div class="btn btn-responsive btn-cfh btn-cfh-black btn-block">start game</div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="btn btn-cfh btn-cfh-wine btn-block">invite other players</div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h5>Ammie the furious!</h5>
+                          <h5>1/5</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/img/card6.png" width="30px" height="30px" alt="card">
+                        </div>
+                      </div>
                     </div>
                 </div>
               </div>
-              <div class="col-md-3 unpadded">
-                  <div class="counter animated bounce">
-                    <p>1/12</p>
-                    <h6>players</h6>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-12">
+                <div class="player-card">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <img src="assets/img/chosen/FB03.png" width="50px" height="50px" alt="avatar">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <h5>Awesome Mary!<span class="czar">...Czar</span></h5>
+                            <h5>2/5</h5>
+                          </div>
+                          <div class="col-md-3">
+                              <img src="assets/img/card6.png" width="30px" height="30px" alt="card">
+                          </div>
+                        </div>
+                      </div>
                   </div>
+                </div>
               </div>
-          </div>
-
-          <div class="row instructions">
-            <div class="col-md-12">
-              <h1 class="centralized">How to Play</h1>
-            </div>
-            <div class="col-md-12">
-              <ul>
-                <li><p>Each player begins with, and will always have, 10 white answer cards.</p></li>
-                <li><p>For each round, one player is randomly chosen as the Card Czar.</p></li>
-                <li><p>Everyone else answers the black question card by clicking on the answer card they want to use.</p></li>
-                <li><p>The Card Czar then picks a favorite answer, and whoever played that answer wins the round.</p></li>
-                <li><p>Want to adorn your avatar with a glorious crown? Donate to charity after the game!</p></li>
-              </ul>
             </div>
           </div>
+          <div class="col-md-6">
+            <div class="question-box">
+              <h4>Searching for Players</h4>
+              <p>1/12 players found</p>
+              <br>
+              <br>
 
-          <div class="row typed">
-            <div class="col-md-9" id="typed-strings">
-                <p > Save a child today! Do not forget to make a contribution today!</p>
-                <p></p>
+              <div class="row">
+                <div class="col-md-5 pull-left">
+                  <a class="btn btn-block btn-cfh-green" data-toggle="modal" data-target="#few-players-modal">Start Game</a>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5 pull-right">
+                  <a class="btn btn-block btn-cfh-white" data-toggle="modal" data-target="#invite-players-modal">Invite Players</a>
+                </div>
+              </div>
+
             </div>
-            <span id="typed"></span>
-            <div class="col-md-3">
-                <button class="btn btn-responsive btn-cfh btn-block btn-cfh-wine pull-right"> Donate </button>
+            
+            <div class="row czar-notification">
+              <div class="col-md-12">
+                <h3>
+                  Czar! You're Czar!!
+                </h3>
+                <h3>Other players are selecting their answers. Get ready to choose the winner!</h3>
+              </div>
+            </div>
+
+            <div class="row player-instructions">
+              <div class="col-md-12">
+                <h5>
+                  Instructions
+                </h5>
+                <ol>
+                  <li>Each player begins with, and will always have, 10 white answer cards.</li>
+                  <li>For each round, one player is randomly chosen as the Card Czar.</li>
+                  <li>Everyone else answers the black question card by clicking on the answer card they want to use.</li>
+                  <li>The Card Czar then picks a favorite answer, and whoever played that answer wins the round.</li>
+                  <li>Want to adorn your avatar with a glorious crown? Donate to charity after the game!</li>
+                </ol>
+              </div>
+            </div>
+
+          </div>
+  
+          <div class="col-md-3">
+            <div class="count">
+              17
+              <p>Seconds Remaining</p>
             </div>
           </div>
-
-        </div>
-        <div class="col-md-2">
           
         </div>
+      
+    </div>
+   </div>
+      
+   <div id="few-players-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Game Notification</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Oops! The minimum number of players to play this game is three (3)!</p>
+          </div>
+        </div>
+    
       </div>
-
     </div>
 
+    <div id="invite-players-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Invite Players</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="search-box">
+              <div class="row">
+                <div class="col-md-9">
+                    <input value="" placeholder="Player's Username">
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-responsive btn-cfh-green">Search</a>
+                </div>
+              </div>
+              
+            </div>
+            <p>Username is not available to play!</p>
+            <a class="btn btn-block btn-cfh-green">Invite Player</a>
+            <div class="invite-box">
+              
+            </div>
+          </div>
+        </div>
     
-    <!-- Bootstrap core JavaScript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>    
+      </div>
+    </div>
 
   </body>
-
 </html>

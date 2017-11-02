@@ -13,8 +13,10 @@
     <!-- Custom styles for this template -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+   
+    <!-- Latest compiled and minified CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -31,7 +33,8 @@
     <script src="assets/js/jquery.min.js"></script>    
     <script src="assets/js/popper.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>     
     <script src="assets/js/main.js"></script>
     <script src="assets/js/typed.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
@@ -39,76 +42,42 @@
     <script src="./assets/js/smooth-scroll.min.js"></script>
 
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-      
-        var ChroMo = '(Chrome)/(\d+)\.(\d+)\.(\d+)\.(\d+) Mobile';
-      
-        if (/Android|webOS|CriOs|ChroMo|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false && location.href !== "http://localhost:3000/#!/app") {
-          $('body').append('<a href="http://hackreactor.com"><img style="z-index: 10000; position: absolute; top: 0; right: 0; width: 125px; height: 125px; border: 0;" src="https://i.imgur.com/x86kKmF.png" alt="Built at Hack Reactor"></a>');
-        }
-      
-        //Twitter buttons
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-      
-        });
-      </script>
-
-
   </head>
 
-  <!-- <style>
-    body {
-        padding-top: 50%;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
-  </style> -->
+
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="./assets/img/logo3.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#about">ABOUT
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" data-scroll href="#charity">CHARITY
-              </a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="signIn.html">SIGN IN
-                </a>
-             </li>
-
-             <li class="nav-item active">
-              <a class="nav-link" href="signup.html">SIGN UP
-              </a>
-           </li>
-          </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle toggleButton" data-toggle="collapse" data-target="#cfhNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="#"><img src="./assets/img/logo10.png" class=initialLogo id="image" alt="CFH LOGO"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="cfhNavbar">
+            <ul class="nav navbar-nav navbar-right" align="center">
+              <li active><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li> 
+              <li><a href="#charity">CHARITY</a></li> 
+              <li><a href="signin.html"> SIGN IN</a></li>
+              <li><a href="signup.html"> SIGN UP</a></li> 
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+  </div>
 
    <!-- First section content -->
 
-   <div class="container-fluid first-section">
+   <div class="container-fluid first-section" id="home">
     <div class="container content">
       <!--  First row -->
       <div class="row header-message">
@@ -124,11 +93,11 @@
       <!-- End of first row -->
 
       <!--  Second row for button -->
-      <div class="row buttons">
-          <div class="col-sm-3"></div>
-        <div class="col-sm-3"><a class="btn signup" href="signup.html">Sign up</a></div>
-        <div class="col-sm-3"><a class="btn btn-success guest">Play as a guest</a></div>
-        <div class="col-sm-3"></div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-lg-offset-3">
+          <a class="btn signup" href="signup.html">Sign up</a>
+        <a class="btn btn-success guest" href="/#!app">Play as a guest</a>
+        </div>
       </div>
       <!-- Second row ends -->
     </div>
@@ -243,27 +212,68 @@
             <a href="http://crowdrise.com" target="_blank">crowdrise</a></p>
         </div>
 
-        <div class="col-sm-12 col-lg-3 github">
+        <div class="col-sm-12 col-lg-3">
           <div class="row">
-            <div class="col-sm-12 col-lg-6">
-                <a href="https://github.com/cardsforhumanity/cardsforhumanity" target="_blank">
+            <div class="col-sm-12 col-lg-3">
+              <a href="https://github.com/cardsforhumanity/cardsforhumanity" target="_blank">
                 <img src="./assets/img/github.png" id="gitcat"></a> 
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-lg-4">
+                <a href="https://twitter.com/cfh_app" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @cfh_app</a>                  
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+                <a href="#"
+                onclick="
+                  window.open(
+                    'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+                    'facebook-share-dialog',
+                    'width=626,height=436');
+                  return false;">
+                Facebook
+              </a>                  
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://cfh.io" data-text="Cards for Humanity: A Game for Horrible People Desperately Trying to do Good" data-related="CFH_App">Tweet</a>                        
+              </div>
+              
+          </div>
+        </div>
+
+        <!-- <div class="col-sm-12 col-lg-3">
+
+
+          <div class="row">
+            <div class="col-sm-12">
+                <a href="https://twitter.com/cfh_app" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @cfh_app</a> 
             </div>  
-            
+          </div>
+
+
+          <div class="row">
+            <div class="col-sm-12">
+                <a href="#"
+                onclick="
+                  window.open(
+                    'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+                    'facebook-share-dialog',
+                    'width=626,height=436');
+                  return false;">
+                Facebook
+              </a>
+            </div>  
+          </div>
+
             <div class="col-sm-12 col-lg-6">
-                <a href="https://twitter.com/cfh_app" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @cfh_app</a>                
+                              
               
                 <div class="row">
                     <div class="col-sm-12 col-lg-12">
-                        <a href="#"
-                        onclick="
-                          window.open(
-                            'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-                            'facebook-share-dialog',
-                            'width=626,height=436');
-                          return false;">
-                        Facebook
-                      </a>
+                        
                     </div>
                 </div>
 
@@ -274,7 +284,7 @@
                     </div>
                 </div>
             </div>  
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

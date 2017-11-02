@@ -7,12 +7,6 @@ body, html {
     /* overflow-x: hidden; */
 }
 
-.navbar-scroll {
-	background-color: #43bf06 !important;
-    padding: 0px;
-    height:70px;
-}
-
 .row {
     padding: 0;
     margin: 0;
@@ -23,8 +17,6 @@ body, html {
     background-size: cover;
     min-height:100%;
     background-position: center;
-    display: flex;
-    flex-direction: row;
     background-attachment: fixed;
 
 }
@@ -70,16 +62,8 @@ body, html {
     color: #ecb60d;
 }
 
-.content .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 90px;
-    margin-bottom: 30px;
-}
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .content .buttons {
     display: flex;
     flex-direction: row;
@@ -87,32 +71,32 @@ body, html {
     justify-content: center;
     margin-top: 50px;
   }
-}
+} */
 
-.content .buttons .signup {
+.content .signup {
     line-height: 50px;
     min-width: 180px;
     text-align: center;
     background: #43bf06;
-    margin-right: 30px;
     color: white;
     border-radius: 10px;
+    margin: 30px 0 30px 0;
     font-size: 16px;
     text-transform: uppercase;
     transition: color 1.0s, background-color 1.0s;
 }
 
-.content .buttons .signup:hover {
+.content .signup:hover {
     background: white;
     color: #43bf06;
 }
 
-.content .buttons .guest {
+.content .guest {
     line-height: 50px;
     min-width: 160px;
     text-align: center;
+    margin: 30px 0 30px 0;
     background: white;
-    margin-right: 30px;
     color: #43bf06;
     border-radius: 10px;
     border-color: transparent;
@@ -121,7 +105,7 @@ body, html {
     
 }
 
-.content .buttons .guest:hover {
+.content .guest:hover {
     text-align: center;
     background: #43bf06;
     color: white;
@@ -270,21 +254,7 @@ body, html {
   font-family: 'Hammersmith+One';
 }
 
-.footer-section .github{
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-content: center;
- align-items: center;
-} 
-
-.footer-section .github .twitter-follow-button .btn{
-    height: 50px;
-}
-@media (max-width: 400px) {
-  .footer-section .github{
-    margin-top: 0px;
-    float: left;
-  } 
+.footer-section #gitcat {
+    max-height: 70px;
 }
 

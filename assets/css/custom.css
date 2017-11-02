@@ -4,20 +4,82 @@
 	height: 50px;
 	transition: background-color 0.5s, height 0.5s;
 	padding-top: 20px;
+	border: 0;
 }
 
-.bg-dark {
-	background-color:#0d9c58 !important;
+.navbar-brand .initialLogo{
+	max-height: 100px;
+	margin-top: -20px;
 }
 
-.navbar-brand {
-	font-family: 'Berkshire Swash', cursive !important;
-	font-size: 30px;
+
+.navbar-nav li, .navbar-nav a {
+	color: white !important;
+	cursor: pointer;
+	background: transparent !important;	
+
 }
 
-.navbar-brand img{
-	max-height: 90px;
+.navbar-collapse {
+	border: none !important;
+}
 
+.link-adjust {
+	margin-top: 20px;
+}
+
+.navbar-scroll {
+	background-color: #43bf06 !important;
+    padding: 0px;
+    height:80px;
+}
+
+.finalLogo{
+	max-height: 80px;
+	margin-top: -10px;
+}
+
+
+.toggleButton {
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	.navbar-nav li, .navbar-nav a {
+		color: white !important;
+		cursor: pointer;
+		background: #43bf06 !important;	
+	
+	}
+
+	.navbar-brand .initialLogo{
+		max-height: 50px;
+		margin-top: -10px;
+	}
+
+	.finalLogo{
+		max-height: 60px;
+		margin-top: 1px;
+	}
+}
+
+.navbar-nav a {
+	height: 50px;
+	font-size: 15px;
+}
+
+.navbar-nav li a:hover {
+	border-top: 1px solid white;
+	border-bottom:  1px solid white;
+	border-radius: 5px;
+}
+
+.changeHover {
+	border-top: 1px solid #43bf06;
+	border-bottom:  1px solid #43bf06;
+	border-radius: 5px;
+	color: #43bf06 !important;
+	background-color: white !important;
 }
 
 .img-responsive {
@@ -45,12 +107,6 @@ body {
 	font-family: 'Berkshire Swash', cursive !important;
 }
 
-.navbar-nav li:hover{
-	background-color: inherit;
-}
-.navbar-dark {
-	color: #F8F8F8;
-}
 
 .nav-item {
 	padding: 13px 10px;
@@ -60,6 +116,22 @@ a.nav-link {
 	background-color: transparent;
 	text-align: center;
 	font-size: 15px;
+}
+
+.nav-link-animate {
+	background-color: transparent;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+	a.nav-link {
+		background-color: transparent;
+		text-align: center;
+		font-size: 15px;
+		padding-top: 50px;
+	}
 }
 
 .abandon{
